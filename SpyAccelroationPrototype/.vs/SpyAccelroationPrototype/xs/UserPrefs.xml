@@ -1,0 +1,21 @@
+﻿<Properties StartupConfiguration="{60EAD822-A4BD-EDDB-12AE-DA2AA64F743C}|">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/SceneScript.cs">
+    <Files>
+      <File FileName="Assets/Scenes/SceneScript.cs" Line="13" Column="10" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SpyAccelroationPrototype" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c1a81753-57c0-4ec2-9cf4-f93ec772c547" />
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MultiItemStartupConfigurations />
+</Properties>
