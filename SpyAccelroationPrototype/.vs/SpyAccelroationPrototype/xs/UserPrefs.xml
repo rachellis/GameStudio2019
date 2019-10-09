@@ -1,21 +1,30 @@
 ﻿<Properties StartupConfiguration="{60EAD822-A4BD-EDDB-12AE-DA2AA64F743C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scenes/SceneScript.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Prototype.cs">
     <Files>
-      <File FileName="Assets/Scenes/SceneScript.cs" Line="13" Column="10" />
+      <File FileName="Assets/Scripts/AccelrationScript.cs" Line="26" Column="50" />
+      <File FileName="Assets/Scripts/Prototype.cs" Line="7" Column="19" />
     </Files>
     <Pads>
       <Pad Id="ProjectPad">
         <State name="__root__">
-          <Node name="SpyAccelroationPrototype" expanded="True" selected="True" />
+          <Node name="SpyAccelroationPrototype" expanded="True">
+            <Node name="Assets" expanded="True">
+              <Node name="Scripts" expanded="True">
+                <Node name="Prototype.cs" selected="True" />
+              </Node>
+            </Node>
+          </Node>
         </State>
       </Pad>
     </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="c1a81753-57c0-4ec2-9cf4-f93ec772c547" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5e8490ee-2e03-4901-ba65-e94f119abb91" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
-    <BreakpointStore />
+    <BreakpointStore>
+      <Breakpoint file="/Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Assets/Scripts/AccelrationScript.cs" relfile="Assets/Scripts/AccelrationScript.cs" line="34" column="1" />
+    </BreakpointStore>
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MultiItemStartupConfigurations />
 </Properties>
