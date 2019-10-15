@@ -1,10 +1,6 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-<<<<<<< HEAD
 # Visual Studio 16
-=======
-# Visual Studio for Mac
->>>>>>> e1ee7dcecfbefa1cdaf359b9d66161a36a8ae792
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "VuforiaScripts", "VuforiaScripts.csproj", "{23416968-6DFB-AE80-82FA-5965B537B02E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Assembly-CSharp", "Assembly-CSharp.csproj", "{60EAD822-A4BD-EDDB-12AE-DA2AA64F743C}"
