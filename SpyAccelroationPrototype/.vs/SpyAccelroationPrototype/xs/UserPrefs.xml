@@ -2,25 +2,12 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/AccelrationScript.cs">
     <Files>
       <File FileName="Assets/Scripts/AccelrationScript.cs" Line="12" Column="30" />
-      <File FileName="Assets/Scripts/Prototype.cs" Line="7" Column="11" />
+      <File FileName="Assets/Scripts/Prototype.cs" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="SpyAccelroationPrototype" expanded="True">
-            <Node name="Assets" expanded="True">
-              <Node name="Scripts" expanded="True">
-                <Node name="AccelrationScript.cs" selected="True" />
-              </Node>
-            </Node>
-          </Node>
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="5e8490ee-2e03-4901-ba65-e94f119abb91" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="14274fdf-c300-4d08-bcf0-181ba98d7a18" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Assets/Scripts/AccelrationScript.cs" relfile="Assets/Scripts/AccelrationScript.cs" line="38" column="1" />

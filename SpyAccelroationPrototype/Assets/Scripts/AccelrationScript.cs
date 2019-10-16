@@ -11,6 +11,10 @@ public class AccelrationScript : MonoBehaviour
     private Vector3 prevAccel = new Vector3(0, 0, 0);
     public float testNum = 1;
     public float ballSpeed = 1;
+    public GameObject button1;
+    public GameObject button2;
+    public GameObject outOfBounds;
+
     // Update is called once per frame
     private void Start()
     {
@@ -24,15 +28,19 @@ public class AccelrationScript : MonoBehaviour
         transform.Translate(accelSmooth.x * ballSpeed, accelSmooth.y*ballSpeed, 0);
         if (Mathf.Abs(Input.gyro.userAcceleration.x) > testNum || Mathf.Abs(Input.gyro.userAcceleration.y) > testNum)
         {
-            GetComponent<SpriteRenderer>().color = Color.red;
-        }else{
-            GetComponent<SpriteRenderer>().color = Color.green;
+            StartCoroutine("ToFast");
         }
         prevAccel = accel;
     }
 
-    public void setBlack()
+    IEnumerator ToFast()
     {
-        GetComponent<SpriteRenderer>().color = Color.black;
+        outOfBounds.SetActive(true);
+        button1.SetActive(false);
+        button2.SetActive(false);
+        yield return new WaitForSeconds(5);
+        outOfBounds.SetActive(false);
+        button1.SetActive(true);
+        button2.SetActive(true);
     }
 }
