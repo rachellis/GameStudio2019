@@ -7,36 +7,32 @@ using UnityEngine;
 /// </summary>
 public class Prototype : MonoBehaviour
 {
-    public GameObject playerPanel;
-
-    public GameObject towerPanel;
     /// <summary>
     /// Called when the player is captured
     /// </summary>
-    public void capturePlayer()
+    public void capturePlayer(GameObject player)
     {
-        playerPanel.SetActive(true);
+        player.SetActive(true);
 
-        Invoke("deactivate", 4f);
-        
-        
+        StartCoroutine(deactivate(player, 4f));
+
+
     }
 
     /// <summary>
     /// Called when the player captures the tower
     /// </summary>
-    public void captureTower()
+    public void captureTower(GameObject tower)
     {
-        towerPanel.SetActive(true);
+        tower.SetActive(true);
 
-        Invoke("deactivate", 4f);
+        StartCoroutine(deactivate(tower, 4f));
 
     }
 
-    public void deactivate()
+    public IEnumerator deactivate(GameObject obj,float waitTime)
     {
-        playerPanel.SetActive(false);
-
-        towerPanel.SetActive(false);
+        yield return new WaitForSeconds(waitTime);
+        obj.SetActive(false);
     }
 }
