@@ -67,8 +67,6 @@
     <Compile Include="Assets\Scripts\Prototype.cs" />
     <None Include="Assets\Vuforia\Shaders\ColoredLines.shader" />
     <None Include="Assets\Vuforia\Shaders\CameraDiffuse.shader" />
-    <None Include="Assets\Mirror\Readme.txt" />
-    <None Include="Assets\Mirror\License.txt" />
     <None Include="Assets\Vuforia\Shaders\VertexLitWithZ.shader" />
     <None Include="Assets\Vuforia\Shaders\VideoBackground.shader" />
     <None Include="Assets\Vuforia\Shaders\OutlineOpaque.shader" />
@@ -286,21 +284,6 @@
     </Reference>
     <Reference Include="Unity.Analytics.StandardEvents">
       <HintPath>/Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Library/PackageCache/com.unity.analytics@3.3.2/Unity.Analytics.StandardEvents.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX">
-      <HintPath>/Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX.Mdb">
-      <HintPath>/Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Mdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX.Pdb">
-      <HintPath>/Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Pdb.dll</HintPath>
-    </Reference>
-    <Reference Include="Telepathy">
-      <HintPath>/Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Assets/Mirror/Runtime/Transport/Telepathy/Telepathy.dll</HintPath>
-    </Reference>
-    <Reference Include="Mono.CecilX.Rocks">
-      <HintPath>/Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Assets/Mirror/Plugins/Mono.Cecil/Mono.CecilX.Rocks.dll</HintPath>
     </Reference>
     <Reference Include="netstandard">
       <HintPath>/Applications/Unity/Hub/Editor/2019.1.9f1/Unity.app/Contents/NetStandard/ref/2.0.0/netstandard.dll</HintPath>
@@ -656,30 +639,6 @@
     <ProjectReference Include="VuforiaEditorScripts.csproj">
       <Project>{D17CD469-3D61-7B6E-871D-34AD52CF8737}</Project>
       <Name>VuforiaEditorScripts</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Weaver.csproj">
-      <Project>{19823C02-EB51-5137-2E6B-46F8AA2F81AD}</Project>
-      <Name>Mirror.Weaver</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Authenticators.csproj">
-      <Project>{D24292F1-192C-6F27-D9C3-7BFD376F8EA4}</Project>
-      <Name>Mirror.Authenticators</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Components.csproj">
-      <Project>{D7B3A82D-6153-3831-09C7-E48344A5DFE8}</Project>
-      <Name>Mirror.Components</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Examples.csproj">
-      <Project>{8A8F8414-F7A6-859C-F1BB-FE6B2B3F0906}</Project>
-      <Name>Mirror.Examples</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.csproj">
-      <Project>{DFDCE28F-D12E-4E90-E779-18BC00DBC18B}</Project>
-      <Name>Mirror</Name>
-    </ProjectReference>
-    <ProjectReference Include="Mirror.Editor.csproj">
-      <Project>{88DD1824-59CF-7047-D1D2-19F37AB30838}</Project>
-      <Name>Mirror.Editor</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
