@@ -2,11 +2,13 @@
   <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Prototype.cs">
     <Files>
       <File FileName="Assets/Scripts/AccelrationScript.cs" Line="12" Column="30" />
-      <File FileName="Assets/Scripts/Prototype.cs" Line="39" Column="1" />
+      <File FileName="Assets/Scripts/Prototype.cs" Line="64" Column="33" />
+      <File FileName="Assets/Scripts/GameTimer.cs" Line="28" Column="10" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0b65f82f-7f40-42f8-b6e7-ae596cdbda50" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Assets/Scripts/AccelrationScript.cs" relfile="Assets/Scripts/AccelrationScript.cs" line="38" column="1" />
