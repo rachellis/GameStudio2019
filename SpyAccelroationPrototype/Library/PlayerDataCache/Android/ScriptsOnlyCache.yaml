@@ -1,5 +1,10 @@
 ScriptsOnlyBuild:
   usedScripts:
+    Assembly-CSharp.dll:
+    - AccelrationScript
+    - MutualCountdown
+    - Prototype
+    - SceneChanger
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
@@ -43,31 +48,84 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9412}
+      Script: {instanceID: 9504}
     - Class: 114
-      Script: {instanceID: 9414}
+      Script: {instanceID: 9506}
     - Class: 114
-      Script: {instanceID: 9420}
+      Script: {instanceID: 9512}
     - Class: 114
-      Script: {instanceID: 9426}
+      Script: {instanceID: 9518}
     - Class: 114
-      Script: {instanceID: 9434}
+      Script: {instanceID: 9526}
     - Class: 114
-      Script: {instanceID: 9470}
+      Script: {instanceID: 9562}
     - Class: 114
-      Script: {instanceID: 9472}
+      Script: {instanceID: 9564}
     - Class: 114
-      Script: {instanceID: 9726}
+      Script: {instanceID: 9780}
     - Class: 114
-      Script: {instanceID: 9850}
+      Script: {instanceID: 9856}
     - Class: 114
-      Script: {instanceID: 9872}
+      Script: {instanceID: 9992}
     - Class: 114
-      Script: {instanceID: 9880}
+      Script: {instanceID: 10014}
     - Class: 114
-      Script: {instanceID: 9882}
+      Script: {instanceID: 10022}
     - Class: 114
-      Script: {instanceID: 10284}
+      Script: {instanceID: 10466}
+    - Class: 114
+      Script: {instanceID: 10788}
+    - Class: 114
+      Script: {instanceID: 11106}
+    - Class: 115
+      Script: {instanceID: 0}
+    - Class: 128
+      Script: {instanceID: 0}
+    - Class: 157
+      Script: {instanceID: 0}
+    - Class: 213
+      Script: {instanceID: 0}
+    - Class: 222
+      Script: {instanceID: 0}
+    - Class: 223
+      Script: {instanceID: 0}
+    - Class: 224
+      Script: {instanceID: 0}
+    Assets/Scenes/StartScreen.unity:
+    - Class: 1
+      Script: {instanceID: 0}
+    - Class: 4
+      Script: {instanceID: 0}
+    - Class: 20
+      Script: {instanceID: 0}
+    - Class: 21
+      Script: {instanceID: 0}
+    - Class: 28
+      Script: {instanceID: 0}
+    - Class: 48
+      Script: {instanceID: 0}
+    - Class: 81
+      Script: {instanceID: 0}
+    - Class: 104
+      Script: {instanceID: 0}
+    - Class: 114
+      Script: {instanceID: 9504}
+    - Class: 114
+      Script: {instanceID: 9506}
+    - Class: 114
+      Script: {instanceID: 9512}
+    - Class: 114
+      Script: {instanceID: 9518}
+    - Class: 114
+      Script: {instanceID: 9526}
+    - Class: 114
+      Script: {instanceID: 9562}
+    - Class: 114
+      Script: {instanceID: 9564}
+    - Class: 114
+      Script: {instanceID: 9772}
+    - Class: 114
+      Script: {instanceID: 10024}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -521,6 +579,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: SignalAsset
+  - hash:
+      serializedVersion: 2
+      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: SceneChanger
   - hash:
       serializedVersion: 2
       Hash: f08a111e17bb701f9c9ec57bb78d9920
@@ -1021,6 +1085,12 @@ ScriptsOnlyBuild:
     className: TextContainer
   - hash:
       serializedVersion: 2
+      Hash: 86fcdfda5d6281f0e83d4534c71b2ee7
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: GameTimer
+  - hash:
+      serializedVersion: 2
       Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
     assemblyName: VuforiaScripts.dll
     namespaceName: 
@@ -1115,6 +1185,12 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: AudioTrack
+  - hash:
+      serializedVersion: 2
+      Hash: 35014935d54edcc4c671068c2aa81a0d
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: MutualCountdown
   - hash:
       serializedVersion: 2
       Hash: c3d3430df9e3ea95e3e3d587961390fb
@@ -1357,7 +1433,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: 1e4fa284c74b13ad8068ce07f2174086
+      Hash: c6f784a3a83907a6d8c27733aff1758e
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AccelrationScript
@@ -1573,5 +1649,6 @@ ScriptsOnlyBuild:
     className: PlayableTrack
   platform: 13
   scenePathNames:
+  - Assets/Scenes/StartScreen.unity
   - Assets/Scenes/InApp.unity
-  playerPath: D:/GameStudio/GameStudio2019/SpyAccelroationPrototype/Builds/Build-0.0.1.apk
+  playerPath: /Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Builds/Build-0.0.4.apk
