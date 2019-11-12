@@ -73,7 +73,7 @@ MonoBehaviour:
   m_MinSize: {x: 234, y: 494}
   m_MaxSize: {x: 10004, y: 14044}
   vertical: 1
-  controlID: 80
+  controlID: 56
 --- !u!114 &4
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -145,7 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 713, y: 494}
   m_MaxSize: {x: 18008, y: 14044}
   vertical: 0
-  controlID: 138
+  controlID: 125
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -325,9 +325,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-      m_SelectedIDs: 48310000
+      m_SelectedIDs: 8e2e0000
       m_LastClickedID: 0
-      m_ExpandedIDs: 72faffff8efbffff
+      m_ExpandedIDs: 06f6ffff82f8ffffe2310000ee3100003832000078320000
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -425,20 +425,20 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Art Assets/ReadyScreen
+    - Assets/Scenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Art Assets/ReadyScreen
+  - Assets/Scenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\Github Files\GameStudio2019\SpyAccelroationPrototype
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 20310000
-    m_LastClickedID: 12576
-    m_ExpandedIDs: 000000007a2b0000762d00001c2f000000ca9a3b
+    m_SelectedIDs: d0300000
+    m_LastClickedID: 12496
+    m_ExpandedIDs: 00000000ce2d0000e22f00009831000000ca9a3b
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -466,7 +466,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000007a2b0000762d0000
+    m_ExpandedIDs: 00000000ce2d0000e22f0000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -558,10 +558,10 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-    m_HBaseRangeMin: -621
-    m_HBaseRangeMax: 621
-    m_VBaseRangeMin: -1344
-    m_VBaseRangeMax: 1344
+    m_HBaseRangeMin: -118.5
+    m_HBaseRangeMax: 118.5
+    m_VBaseRangeMin: -211
+    m_VBaseRangeMax: 211
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
@@ -581,7 +581,7 @@ MonoBehaviour:
       y: 17
       width: 1025
       height: 422
-    m_Scale: {x: 0.15699404, y: 0.15699404}
+    m_Scale: {x: 1, y: 1}
     m_Translation: {x: 512.5, y: 211}
     m_MarginLeft: 0
     m_MarginRight: 0
@@ -589,12 +589,12 @@ MonoBehaviour:
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-      x: -3264.455
-      y: -1344
-      width: 6528.91
-      height: 2688
+      x: -512.5
+      y: -211
+      width: 1025
+      height: 422
     m_MinimalGUI: 1
-  m_defaultScale: 0.15699404
+  m_defaultScale: 1
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 1025, y: 439}
@@ -633,7 +633,7 @@ MonoBehaviour:
   m_Gizmos: 1
   m_SceneIsLit: 1
   m_SceneLighting: 1
-  m_2DMode: 0
+  m_2DMode: 1
   m_isRotationLocked: 0
   m_PlayAudio: 0
   m_AudioPlay: 0
