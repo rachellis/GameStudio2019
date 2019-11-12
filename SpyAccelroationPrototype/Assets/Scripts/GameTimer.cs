@@ -26,7 +26,6 @@ public class GameTimer : MonoBehaviour
     {
         if (timerText != null)
         {
-            time = 1200;
             timerText.text = "Time Left: 20:00:000";
             InvokeRepeating("UpdateTimer", 0.0f, 0.01667f);
         }
