@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class MutualCountdown : MonoBehaviour
 {
     public Text countdownText;
@@ -13,53 +14,83 @@ public class MutualCountdown : MonoBehaviour
 
     private float countdownNumber;
 
+    private float newTime; 
+
     private bool hasPressed = false;
 
-    private bool hidingTime = false; 
+    private bool hidingTime = false;
 
 
-    public void startCountdown()
+    private void Tick()
     {
+        newTime = Time.deltaTime;
+        Debug.Log(newTime);
 
+    }
 
-        countdownNumber = 5f;
+    public void startCountdown(float countdownTime)
+    { /*
 
+        countdownNumber -= Time.deltaTime;
+
+        int seconds = ((int)countdownNumber % 60);
+        */
+        Debug.Log("Button Pushed");
+        /*
+        countdownNumber = 6f;
+
+        countdownText.gameObject.SetActive(true); */
+        StartCoroutine(Countdown(countdownTime));
+
+    }
+
+    private IEnumerator Countdown(float countdownTime)
+    {
         countdownText.gameObject.SetActive(true);
 
+        while (countdownTime >= 1f)
+        {
+            Debug.Log("LLLOOOP");
+            countdownTime -= (Time.deltaTime);
+            int printInt = (int)(countdownTime) % 60;
+            int mins = ((int)(countdownTime - printInt) / 60);
+            countdownText.text = "Syncronize: " + mins.ToString() + ":" + printInt.ToString();
+            yield return null;
+        }
+        
         hasPressed = true;
 
-
+        countdownText.gameObject.SetActive(false);
     }
 
     public void startHiding()
     {
-        countdownNumber = 300f;
+        if (!hidingTime)
+        {
+            countdownNumber = 300f;
 
-        hideText.gameObject.SetActive(true);
+            hideText.gameObject.SetActive(true);
 
-        countdownText.gameObject.SetActive(true);
+            countdownText.gameObject.SetActive(true);
 
-        hidingTime = true;
+            hidingTime = true;
+        }
 
     }
 
     private void Update()
     {
-        countdownNumber -= Time.deltaTime ;
-
-        int seconds =  ((int) countdownNumber % 60); 
-
-        countdownText.text = "Syncronize: " + seconds.ToString();
-
+        /*
 
 
         if (countdownNumber <= 0 && hasPressed && !hidingTime)
         {
             Debug.Log("sdjshdjdh");
+            startHiding();
             countdownText.gameObject.SetActive(false);
             startButton.gameObject.SetActive(false);
             hideText.gameObject.SetActive(false);
-        }
+        } */
 
     }
 }
