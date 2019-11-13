@@ -5,8 +5,6 @@ ScriptsOnlyBuild:
     - MutualCountdown
     - Prototype
     - SceneChanger
-    UnityEditor.TestRunner.dll:
-    - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
     - UnityEngine.EventSystems.EventSystem
     - UnityEngine.EventSystems.StandaloneInputModule
@@ -48,35 +46,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9432}
+      Script: {instanceID: 9478}
     - Class: 114
-      Script: {instanceID: 9434}
+      Script: {instanceID: 9480}
     - Class: 114
-      Script: {instanceID: 9440}
-    - Class: 114
-      Script: {instanceID: 9446}
-    - Class: 114
-      Script: {instanceID: 9454}
-    - Class: 114
-      Script: {instanceID: 9490}
+      Script: {instanceID: 9486}
     - Class: 114
       Script: {instanceID: 9492}
     - Class: 114
-      Script: {instanceID: 9708}
+      Script: {instanceID: 9500}
     - Class: 114
-      Script: {instanceID: 9784}
+      Script: {instanceID: 9536}
     - Class: 114
-      Script: {instanceID: 9920}
+      Script: {instanceID: 9538}
     - Class: 114
-      Script: {instanceID: 9942}
+      Script: {instanceID: 9734}
     - Class: 114
-      Script: {instanceID: 9950}
+      Script: {instanceID: 9794}
     - Class: 114
-      Script: {instanceID: 10394}
+      Script: {instanceID: 9918}
     - Class: 114
-      Script: {instanceID: 10716}
+      Script: {instanceID: 9940}
     - Class: 114
-      Script: {instanceID: 11034}
+      Script: {instanceID: 9948}
+    - Class: 114
+      Script: {instanceID: 10354}
+    - Class: 114
+      Script: {instanceID: 10628}
+    - Class: 114
+      Script: {instanceID: 10932}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -107,21 +105,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9432}
+      Script: {instanceID: 9478}
     - Class: 114
-      Script: {instanceID: 9434}
+      Script: {instanceID: 9480}
     - Class: 114
-      Script: {instanceID: 9440}
+      Script: {instanceID: 9486}
     - Class: 114
-      Script: {instanceID: 9446}
+      Script: {instanceID: 9492}
     - Class: 114
-      Script: {instanceID: 9454}
+      Script: {instanceID: 9500}
     - Class: 114
-      Script: {instanceID: 9490}
+      Script: {instanceID: 9536}
     - Class: 114
-      Script: {instanceID: 9700}
+      Script: {instanceID: 9726}
     - Class: 114
-      Script: {instanceID: 9952}
+      Script: {instanceID: 9950}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -1645,4 +1643,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/StartScreen.unity
   - Assets/Scenes/InApp.unity
-  playerPath: D:/Github Files/GameStudio2019/SpyAccelroationPrototype/Builds/Build-0.2.0.apk
+  playerPath: /Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Builds/Build-0.2.1.apk

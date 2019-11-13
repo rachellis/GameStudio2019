@@ -3,12 +3,12 @@
     <Files>
       <File FileName="Assets/Scripts/AccelrationScript.cs" Line="12" Column="30" />
       <File FileName="Assets/Scripts/Prototype.cs" Line="64" Column="33" />
-      <File FileName="Assets/Scripts/GameTimer.cs" Line="28" Column="10" />
+      <File FileName="Assets/Scripts/GameTimer.cs" Line="19" Column="44" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="0b65f82f-7f40-42f8-b6e7-ae596cdbda50" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f4f4f3c0-3237-48a8-9fc6-7c6c9812a2b8" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Assets/Scripts/AccelrationScript.cs" relfile="Assets/Scripts/AccelrationScript.cs" line="38" column="1" />
