@@ -8,6 +8,12 @@ public class MutualCountdown : MonoBehaviour
 {
     public Text countdownText;
 
+    public Text gameCountdownText;
+
+    public Image Information;
+
+    public Image Warning;
+
     public Button startButton;
 
     public Button hideText; 
@@ -44,6 +50,10 @@ public class MutualCountdown : MonoBehaviour
 
     }
 
+    public void startGameCountdown(float countdownTime) {
+        StartCoroutine(GameCountdown(countdownTime));
+    }
+
     private IEnumerator Countdown(float countdownTime)
     {
         countdownText.gameObject.SetActive(true);
@@ -54,13 +64,33 @@ public class MutualCountdown : MonoBehaviour
             countdownTime -= (Time.deltaTime);
             int printInt = (int)(countdownTime) % 60;
             int mins = ((int)(countdownTime - printInt) / 60);
-            countdownText.text = "Syncronize: " + mins.ToString() + ":" + printInt.ToString();
+            string s = "{0}:{1:00}";
+            string c_time = string.Format(s, mins, printInt);
+            countdownText.text = c_time;
             yield return null;
         }
         
         hasPressed = true;
 
         countdownText.gameObject.SetActive(false);
+        Information.gameObject.SetActive(false);
+
+        hideText.gameObject.SetActive(true);
+        Warning.gameObject.SetActive(true);
+    }
+
+    private IEnumerator GameCountdown(float countdownTime)
+    {
+        while (countdownTime >= 1f)
+        {
+            countdownTime -= (Time.deltaTime);
+            int printInt = (int)(countdownTime) % 60;
+            int mins = ((int)(countdownTime - printInt) / 60);
+            string s = "{0}:{1:00}";
+            string c_time = string.Format(s, mins, printInt);
+            gameCountdownText.text = c_time;
+            yield return null;
+        }
     }
 
     public void startHiding()

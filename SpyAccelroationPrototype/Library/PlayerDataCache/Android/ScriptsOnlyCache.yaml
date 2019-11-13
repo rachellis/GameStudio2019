@@ -48,35 +48,35 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9504}
+      Script: {instanceID: 9432}
     - Class: 114
-      Script: {instanceID: 9506}
+      Script: {instanceID: 9434}
     - Class: 114
-      Script: {instanceID: 9512}
+      Script: {instanceID: 9440}
     - Class: 114
-      Script: {instanceID: 9518}
+      Script: {instanceID: 9446}
     - Class: 114
-      Script: {instanceID: 9526}
+      Script: {instanceID: 9454}
     - Class: 114
-      Script: {instanceID: 9562}
+      Script: {instanceID: 9490}
     - Class: 114
-      Script: {instanceID: 9564}
+      Script: {instanceID: 9492}
     - Class: 114
-      Script: {instanceID: 9780}
+      Script: {instanceID: 9708}
     - Class: 114
-      Script: {instanceID: 9856}
+      Script: {instanceID: 9784}
     - Class: 114
-      Script: {instanceID: 9992}
+      Script: {instanceID: 9920}
     - Class: 114
-      Script: {instanceID: 10014}
+      Script: {instanceID: 9942}
     - Class: 114
-      Script: {instanceID: 10022}
+      Script: {instanceID: 9950}
     - Class: 114
-      Script: {instanceID: 10466}
+      Script: {instanceID: 10394}
     - Class: 114
-      Script: {instanceID: 10788}
+      Script: {instanceID: 10716}
     - Class: 114
-      Script: {instanceID: 11106}
+      Script: {instanceID: 11034}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -98,8 +98,6 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 20
       Script: {instanceID: 0}
-    - Class: 21
-      Script: {instanceID: 0}
     - Class: 28
       Script: {instanceID: 0}
     - Class: 48
@@ -109,26 +107,22 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9504}
+      Script: {instanceID: 9432}
     - Class: 114
-      Script: {instanceID: 9506}
+      Script: {instanceID: 9434}
     - Class: 114
-      Script: {instanceID: 9512}
+      Script: {instanceID: 9440}
     - Class: 114
-      Script: {instanceID: 9518}
+      Script: {instanceID: 9446}
     - Class: 114
-      Script: {instanceID: 9526}
+      Script: {instanceID: 9454}
     - Class: 114
-      Script: {instanceID: 9562}
+      Script: {instanceID: 9490}
     - Class: 114
-      Script: {instanceID: 9564}
+      Script: {instanceID: 9700}
     - Class: 114
-      Script: {instanceID: 9772}
-    - Class: 114
-      Script: {instanceID: 10024}
+      Script: {instanceID: 9952}
     - Class: 115
-      Script: {instanceID: 0}
-    - Class: 128
       Script: {instanceID: 0}
     - Class: 157
       Script: {instanceID: 0}
@@ -593,7 +587,7 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
-      Hash: 71bb6a6b6c8f052f948db64c7dd3ca4f
+      Hash: 83a701998d808105b03ef4d2176e7755
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Prototype
@@ -1187,7 +1181,7 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: 35014935d54edcc4c671068c2aa81a0d
+      Hash: 094f627a3753b8add8ab7e22d0da139f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: MutualCountdown
@@ -1651,4 +1645,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/StartScreen.unity
   - Assets/Scenes/InApp.unity
-  playerPath: /Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Builds/Build-0.0.4.apk
+  playerPath: D:/Github Files/GameStudio2019/SpyAccelroationPrototype/Builds/Build-0.2.0.apk
