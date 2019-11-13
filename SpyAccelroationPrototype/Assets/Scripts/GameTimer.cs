@@ -16,6 +16,7 @@ public class GameTimer : MonoBehaviour
     void Start()
     {
         Debug.Log("Here ;P");
+        Application.runInBackground = true;
         StartCoundownTimer();
     }
 
