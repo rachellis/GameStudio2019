@@ -1,27 +1,15 @@
 ﻿<Properties StartupConfiguration="{60EAD822-A4BD-EDDB-12AE-DA2AA64F743C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MutualCountdown.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Prototype.cs">
     <Files>
       <File FileName="Assets/Scripts/AccelrationScript.cs" Line="12" Column="30" />
       <File FileName="Assets/Scripts/Prototype.cs" Line="79" Column="49" />
-      <File FileName="Assets/Scripts/GameTimer.cs" Line="53" Column="6" />
-      <File FileName="Assets/Scripts/MutualCountdown.cs" Line="136" Column="6" />
+      <File FileName="Assets/Scripts/GameTimer.cs" />
+      <File FileName="Assets/Scripts/MutualCountdown.cs" Line="147" Column="31" />
     </Files>
-    <Pads>
-      <Pad Id="ProjectPad">
-        <State name="__root__">
-          <Node name="SpyAccelroationPrototype" expanded="True" selected="True" />
-        </State>
-      </Pad>
-      <Pad Id="MonoDevelop.UnitTesting.TestPad">
-        <State name="__root__">
-          <Node name="SpyAccelroationPrototype" expanded="True" selected="True" />
-        </State>
-      </Pad>
-    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="f4f4f3c0-3237-48a8-9fc6-7c6c9812a2b8" />
+  <MonoDevelop.Ide.ItemProperties.Assembly-CSharp PreferredExecutionTarget="88718db1-4788-43e6-bc98-320b139bdeb6" />
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore>
       <Breakpoint file="/Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Assets/Scripts/AccelrationScript.cs" relfile="Assets/Scripts/AccelrationScript.cs" line="38" column="1" />
