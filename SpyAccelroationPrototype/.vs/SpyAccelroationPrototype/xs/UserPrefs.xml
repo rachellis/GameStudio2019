@@ -1,10 +1,23 @@
 ﻿<Properties StartupConfiguration="{60EAD822-A4BD-EDDB-12AE-DA2AA64F743C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Prototype.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MutualCountdown.cs">
     <Files>
       <File FileName="Assets/Scripts/AccelrationScript.cs" Line="12" Column="30" />
-      <File FileName="Assets/Scripts/Prototype.cs" Line="64" Column="33" />
-      <File FileName="Assets/Scripts/GameTimer.cs" Line="19" Column="44" />
+      <File FileName="Assets/Scripts/Prototype.cs" Line="79" Column="49" />
+      <File FileName="Assets/Scripts/GameTimer.cs" Line="53" Column="6" />
+      <File FileName="Assets/Scripts/MutualCountdown.cs" Line="136" Column="6" />
     </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State name="__root__">
+          <Node name="SpyAccelroationPrototype" expanded="True" selected="True" />
+        </State>
+      </Pad>
+      <Pad Id="MonoDevelop.UnitTesting.TestPad">
+        <State name="__root__">
+          <Node name="SpyAccelroationPrototype" expanded="True" selected="True" />
+        </State>
+      </Pad>
+    </Pads>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />

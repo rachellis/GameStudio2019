@@ -22,10 +22,6 @@ public class Prototype : MonoBehaviour
 
     public GameObject homeBeacon;
 
-    public List<GameObject> listOfRedBeacons;
-
-    public List<GameObject> listOfBlueBeacons;
-
     public List<GameObject> listOfDisplays;
 
     private bool hasBeenCaught = false;
@@ -48,9 +44,13 @@ public class Prototype : MonoBehaviour
     /// </summary>
     public void captureTower(GameObject beacon)
     {
-        dictOfBeacons[beacon] = true;
-        numOfBeacons++;
-        displayBeacons(numOfBeacons);
+		bool test = (bool)dictOfBeacons[beacon];
+		if (test == false)
+		{
+			dictOfBeacons[beacon] = true;
+			numOfBeacons++;
+			displayBeacons(numOfBeacons);
+		}
 
     }
 
@@ -62,16 +62,24 @@ public class Prototype : MonoBehaviour
 
     public void beenCaputred()
     {
-        foreach (KeyValuePair<GameObject,bool> kvp in dictOfBeacons)
-        {
-            dictOfBeacons[kvp.Key] = false;
-        }
+		Hashtable temp = new Hashtable();
+		temp = (Hashtable)dictOfBeacons.Clone();
+
+        foreach(GameObject obj in temp.Keys)
+		{
+			dictOfBeacons[obj] = false;
+		}
+
         numOfBeacons = 0;
         displayBeacons(numOfBeacons);
     }
 
     private void displayBeacons(int numDisplay)
     {
+		for (int i = 0; i < listOfDisplays.Count; i++)
+		{
+			listOfDisplays[i].SetActive(false);
+		}
         for (int i = 0; i < numDisplay; i++)
         {
             listOfDisplays[i].SetActive(true);
@@ -82,19 +90,21 @@ public class Prototype : MonoBehaviour
     {
         if (isRedTeam)
         {
-            foreach (var item  in listOfBlueBeacons)
+            foreach (Transform item  in blueBecaons.transform)
             {
-                dictOfBeacons.Add(item, false);
-                redBeacons.SetActive(false);
+                dictOfBeacons.Add(item.gameObject, false);
+				redBeacons.SetActive(false);
             }
+			Debug.Log("On the Red Team, find the blue beacons");
         }
         else
         {
-            foreach (GameObject item in listOfRedBeacons)
+            foreach (Transform item in redBeacons.transform)
             {
-                dictOfBeacons.Add(item, false);
+                dictOfBeacons.Add(item.gameObject, false);
                 blueBecaons.SetActive(false);
             }
+			Debug.Log("On the Blue Team, find the red beacons");
         }
     }
 }
