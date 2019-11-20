@@ -14,12 +14,22 @@ public class Prototype : MonoBehaviour
     ///
 
     public float wait = 4f;
+
     public GameObject capturePointBadge;
 
-    public Color caughtColor;
-    public Color SafeColor;
+    public GameObject redBeacons;
+    public GameObject blueBecaons;
+
+    public GameObject homeBeacon;
+
+    public List<GameObject> listOfDisplays;
 
     private bool hasBeenCaught = false;
+
+    private int numOfBeacons = 0;
+
+    private Hashtable dictOfBeacons = new Hashtable();
+
 
     public void capturePlayer(GameObject player)
     {
@@ -33,35 +43,70 @@ public class Prototype : MonoBehaviour
     /// <summary>
     /// Called when the player captures the tower
     /// </summary>
-    public void captureTower(GameObject tower)
+    public void captureTower(GameObject beacon)
     {
-        tower.SetActive(true);
-        capturePointBadge.SetActive(true);
-        StartCoroutine(deactivate(tower, wait));
+		bool test = (bool)dictOfBeacons[beacon];
+		if (test == false)
+		{
+            Handheld.Vibrate();
+            dictOfBeacons[beacon] = true;
+			numOfBeacons++;
+			displayBeacons(numOfBeacons);
+		}
 
     }
 
     public IEnumerator deactivate(GameObject obj,float waitTime)
     {
         yield return new WaitForSeconds(waitTime);
-        obj.SetActive(false);
     }
 
-    public void CaptureSystem(Button captureButton)
+
+    public void beenCaputred()
     {
-        Text captureButtonText = captureButton.GetComponentInChildren(typeof(Text)) as Text;
-        if (hasBeenCaught)
+		Hashtable temp = new Hashtable();
+		temp = (Hashtable)dictOfBeacons.Clone();
+
+        foreach(GameObject obj in temp.Keys)
+		{
+			dictOfBeacons[obj] = false;
+		}
+
+        numOfBeacons = 0;
+        displayBeacons(numOfBeacons);
+    }
+
+    private void displayBeacons(int numDisplay)
+    {
+		for (int i = 0; i < listOfDisplays.Count; i++)
+		{
+			listOfDisplays[i].SetActive(false);
+		}
+        for (int i = 0; i < numDisplay; i++)
         {
-            captureButtonText.text = "I've been caught";
-            captureButton.GetComponent<Image>().color = caughtColor;
-            hasBeenCaught = false;
+            listOfDisplays[i].SetActive(true);
+        }
+    }
+
+    public void setTeam(bool isRedTeam)
+    {
+        if (isRedTeam)
+        {
+            foreach (Transform item  in blueBecaons.transform)
+            {
+                dictOfBeacons.Add(item.gameObject, false);
+				redBeacons.SetActive(false);
+            }
+			Debug.Log("On the Red Team, find the blue beacons");
         }
         else
         {
-            captureButtonText.text = "I'm at base";
-            captureButton.GetComponent<Image>().color = SafeColor;
-            capturePointBadge.SetActive(false);
-            hasBeenCaught = true;
+            foreach (Transform item in redBeacons.transform)
+            {
+                dictOfBeacons.Add(item.gameObject, false);
+                blueBecaons.SetActive(false);
+            }
+			Debug.Log("On the Blue Team, find the red beacons");
         }
     }
 }

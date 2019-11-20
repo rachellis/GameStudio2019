@@ -132,4 +132,27 @@ public class MutualCountdown : MonoBehaviour
         } */
 
     }
+
+    public void flashItem(GameObject item)
+    {
+        StartCoroutine("flash", item);
+    }
+
+    private IEnumerator flash(GameObject item)
+    {
+        yield return new WaitForSeconds(1);
+        item.SetActive(false);
+        yield return new WaitForSeconds(0.1f);
+        item.SetActive(true);
+        yield return new WaitForSeconds(0.2f);
+        item.SetActive(false);
+        yield return new WaitForSeconds(0.05f);
+        item.SetActive(true);
+        yield return new WaitForSeconds(0.05f);
+        item.SetActive(false);
+        yield return new WaitForSeconds(0.05f);
+        item.SetActive(true);
+        yield return new WaitForSeconds(0.05f);
+        item.SetActive(false);
+    }
 }

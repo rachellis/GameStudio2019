@@ -1,9 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <QCARConfig xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="qcar_config.xsd">
   <Tracking>
-    <ImageTarget name="PleaseWork2" size="100.000000 87.485519" />
-    <ImageTarget name="PleaseWork1" size="100.000000 92.269325" />
-    <ImageTarget name="halloween_spooky" size="400.000000 266.666656" />
-    <ImageTarget name="slime" size="400.000000 416.666656" />
+    <ImageTarget name="HomeBeacon" size="100.000000 75.964127" />
+    <ImageTarget name="RedBeacon3" size="100.000000 83.432541" />
+    <ImageTarget name="RedBeacon2" size="100.000000 72.851067" />
+    <ImageTarget name="RedBeacon1" size="100.000000 68.887085" />
+    <ImageTarget name="BlueBeacon3" size="100.000000 82.905136" />
+    <ImageTarget name="BlueBeacon2" size="100.000000 83.432541" />
+    <ImageTarget name="BlueBeacon1" size="100.000000 75.874771" />
   </Tracking>
 </QCARConfig>

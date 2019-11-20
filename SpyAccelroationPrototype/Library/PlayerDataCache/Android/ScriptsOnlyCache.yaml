@@ -5,6 +5,12 @@ ScriptsOnlyBuild:
     - MutualCountdown
     - Prototype
     - SceneChanger
+    UnityEditor.Graphs.dll:
+    - UnityEditor.Graphs.AnimationBlendTree.Graph
+    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
+    - UnityEditor.Graphs.AnimationStateMachine.Graph
+    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
+    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.TestListCacheData
     UnityEngine.UI.dll:
@@ -43,45 +49,59 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 90
+      Script: {instanceID: 0}
+    - Class: 91
+      Script: {instanceID: 0}
+    - Class: 95
       Script: {instanceID: 0}
     - Class: 104
       Script: {instanceID: 0}
+    - Class: 108
+      Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9432}
+      Script: {instanceID: 9506}
     - Class: 114
-      Script: {instanceID: 9434}
+      Script: {instanceID: 9508}
     - Class: 114
-      Script: {instanceID: 9440}
+      Script: {instanceID: 9514}
     - Class: 114
-      Script: {instanceID: 9446}
+      Script: {instanceID: 9520}
     - Class: 114
-      Script: {instanceID: 9454}
+      Script: {instanceID: 9528}
     - Class: 114
-      Script: {instanceID: 9490}
+      Script: {instanceID: 9564}
     - Class: 114
-      Script: {instanceID: 9492}
+      Script: {instanceID: 9566}
     - Class: 114
-      Script: {instanceID: 9708}
+      Script: {instanceID: 9782}
     - Class: 114
-      Script: {instanceID: 9784}
+      Script: {instanceID: 9858}
     - Class: 114
-      Script: {instanceID: 9920}
+      Script: {instanceID: 9994}
     - Class: 114
-      Script: {instanceID: 9942}
+      Script: {instanceID: 10016}
     - Class: 114
-      Script: {instanceID: 9950}
+      Script: {instanceID: 10024}
     - Class: 114
-      Script: {instanceID: 10394}
+      Script: {instanceID: 10468}
     - Class: 114
-      Script: {instanceID: 10716}
+      Script: {instanceID: 10790}
     - Class: 114
-      Script: {instanceID: 11034}
+      Script: {instanceID: 11108}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
       Script: {instanceID: 0}
     - Class: 157
+      Script: {instanceID: 0}
+    - Class: 198
+      Script: {instanceID: 0}
+    - Class: 199
       Script: {instanceID: 0}
     - Class: 213
       Script: {instanceID: 0}
@@ -107,21 +127,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9432}
+      Script: {instanceID: 9506}
     - Class: 114
-      Script: {instanceID: 9434}
+      Script: {instanceID: 9508}
     - Class: 114
-      Script: {instanceID: 9440}
+      Script: {instanceID: 9514}
     - Class: 114
-      Script: {instanceID: 9446}
+      Script: {instanceID: 9520}
     - Class: 114
-      Script: {instanceID: 9454}
+      Script: {instanceID: 9528}
     - Class: 114
-      Script: {instanceID: 9490}
+      Script: {instanceID: 9564}
     - Class: 114
-      Script: {instanceID: 9700}
+      Script: {instanceID: 9774}
     - Class: 114
-      Script: {instanceID: 9952}
+      Script: {instanceID: 10026}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -587,7 +607,7 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
-      Hash: 83a701998d808105b03ef4d2176e7755
+      Hash: 298c6273571bab1c7a382ad7e3b0b327
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Prototype
@@ -1645,4 +1665,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/StartScreen.unity
   - Assets/Scenes/InApp.unity
-  playerPath: D:/Github Files/GameStudio2019/SpyAccelroationPrototype/Builds/Build-0.2.0.apk
+  playerPath: /Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Builds/Build-1.0.1.apk
