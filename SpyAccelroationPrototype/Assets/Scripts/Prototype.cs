@@ -30,6 +30,7 @@ public class Prototype : MonoBehaviour
 
     private Hashtable dictOfBeacons = new Hashtable();
 
+
     public void capturePlayer(GameObject player)
     {
         player.SetActive(true);
@@ -47,7 +48,8 @@ public class Prototype : MonoBehaviour
 		bool test = (bool)dictOfBeacons[beacon];
 		if (test == false)
 		{
-			dictOfBeacons[beacon] = true;
+            Handheld.Vibrate();
+            dictOfBeacons[beacon] = true;
 			numOfBeacons++;
 			displayBeacons(numOfBeacons);
 		}
