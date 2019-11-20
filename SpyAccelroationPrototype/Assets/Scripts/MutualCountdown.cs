@@ -27,6 +27,9 @@ public class MutualCountdown : MonoBehaviour
     private bool hidingTime = false;
 
 
+    [SerializeField] private DataMaster dateStuff;
+
+
     private void Tick()
     {
         newTime = Time.deltaTime;
@@ -83,6 +86,12 @@ public class MutualCountdown : MonoBehaviour
     {
         while (countdownTime >= 1f)
         {
+            if (dateStuff.hasQuit)
+            {
+                Debug.Log("I am getting here even though I should not be hahahah");
+                countdownTime -= dateStuff.intDifference;
+                dateStuff.hasQuit = false; 
+            }
             countdownTime -= (Time.deltaTime);
             int printInt = (int)(countdownTime) % 60;
             int mins = ((int)(countdownTime - printInt) / 60);
