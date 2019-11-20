@@ -9481,7 +9481,7 @@ GameObject:
   - component: {fileID: 1044581962}
   - component: {fileID: 1044581961}
   m_Layer: 5
-  m_Name: NewButton
+  m_Name: 20 Minute Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11756,7 +11756,7 @@ GameObject:
   - component: {fileID: 1718192281}
   - component: {fileID: 1718192280}
   m_Layer: 5
-  m_Name: Button
+  m_Name: 3 Minute Button
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -11831,7 +11831,7 @@ MonoBehaviour:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
-          m_FloatArgument: 180
+          m_FloatArgument: 5
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
@@ -12875,7 +12875,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -1.7, y: 5.0975}
+  m_AnchoredPosition: {x: -1.7, y: 5.097473}
   m_SizeDelta: {x: 795, y: 1318.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1980703374
@@ -13451,7 +13451,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -1.7, y: 5.100006}
+  m_AnchoredPosition: {x: -1.7, y: 5.0999756}
   m_SizeDelta: {x: 795, y: 1318.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2099997126
