@@ -19,8 +19,14 @@ public class Prototype : MonoBehaviour
 
     public GameObject homeBeacon;
 
+    public GameObject lockScreen;
+    public GameObject beaconContainer;
+    public GameObject homeScreenButton;
+
     // List of display items
     public List<GameObject> listOfDisplays;
+
+    public List<GameObject> listOfFakeBeacons;
 
     // Test if player was captured
     private bool hasBeenCaught = false;
@@ -49,17 +55,29 @@ public class Prototype : MonoBehaviour
     /// <param name="beacon">Beacon object that was captured</param>
     public void captureTower(GameObject beacon)
     {
+        Debug.Log(beacon);
         // Check if the beacon was already captured
-		bool test = (bool)dictOfBeacons[beacon];
+        bool test = (bool)dictOfBeacons[beacon];
 
         // If it wasn't captured
-        if (test == false)
-		{
-            Handheld.Vibrate();
-            dictOfBeacons[beacon] = true;
-			numOfBeacons++;
-			displayBeacons(numOfBeacons);
-		}
+        if (listOfFakeBeacons.Contains(beacon))
+        {
+            Debug.Log("Fake Beacon");
+            beenCaputred();
+            beaconContainer.SetActive(false);
+            lockScreen.SetActive(true);
+            homeScreenButton.SetActive(true);
+        }
+        else
+        {
+            if (test == false)
+            {
+                Handheld.Vibrate();
+                dictOfBeacons[beacon] = true;
+                numOfBeacons++;
+                displayBeacons(numOfBeacons);
+            }
+        }
 
     }
 
@@ -113,6 +131,14 @@ public class Prototype : MonoBehaviour
         {
             listOfDisplays[i].SetActive(true);
         }
+    }
+
+    /// <summary>
+    /// Vibrates
+    /// </summary>
+    public void vibrate()
+    {
+        Handheld.Vibrate();
     }
 
     /// <summary>

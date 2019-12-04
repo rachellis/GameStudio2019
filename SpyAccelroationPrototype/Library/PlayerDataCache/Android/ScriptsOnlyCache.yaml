@@ -2,6 +2,7 @@ ScriptsOnlyBuild:
   usedScripts:
     Assembly-CSharp.dll:
     - AccelrationScript
+    - DataMaster
     - MutualCountdown
     - Prototype
     - SceneChanger
@@ -49,7 +50,11 @@ ScriptsOnlyBuild:
       Script: {instanceID: 0}
     - Class: 48
       Script: {instanceID: 0}
+    - Class: 74
+      Script: {instanceID: 0}
     - Class: 81
+      Script: {instanceID: 0}
+    - Class: 90
       Script: {instanceID: 0}
     - Class: 91
       Script: {instanceID: 0}
@@ -60,35 +65,37 @@ ScriptsOnlyBuild:
     - Class: 108
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9774}
+      Script: {instanceID: 9478}
     - Class: 114
-      Script: {instanceID: 9776}
+      Script: {instanceID: 9480}
     - Class: 114
-      Script: {instanceID: 9782}
+      Script: {instanceID: 9486}
     - Class: 114
-      Script: {instanceID: 9788}
+      Script: {instanceID: 9492}
     - Class: 114
-      Script: {instanceID: 9796}
+      Script: {instanceID: 9500}
     - Class: 114
-      Script: {instanceID: 9832}
+      Script: {instanceID: 9536}
     - Class: 114
-      Script: {instanceID: 9834}
+      Script: {instanceID: 9538}
     - Class: 114
-      Script: {instanceID: 10030}
+      Script: {instanceID: 9734}
     - Class: 114
-      Script: {instanceID: 10090}
+      Script: {instanceID: 9794}
     - Class: 114
-      Script: {instanceID: 10214}
+      Script: {instanceID: 9918}
     - Class: 114
-      Script: {instanceID: 10236}
+      Script: {instanceID: 9940}
     - Class: 114
-      Script: {instanceID: 10244}
+      Script: {instanceID: 9948}
     - Class: 114
-      Script: {instanceID: 10650}
+      Script: {instanceID: 10354}
     - Class: 114
-      Script: {instanceID: 10924}
+      Script: {instanceID: 10404}
     - Class: 114
-      Script: {instanceID: 11228}
+      Script: {instanceID: 10630}
+    - Class: 114
+      Script: {instanceID: 10934}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -123,21 +130,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 9774}
+      Script: {instanceID: 9478}
     - Class: 114
-      Script: {instanceID: 9776}
+      Script: {instanceID: 9480}
     - Class: 114
-      Script: {instanceID: 9782}
+      Script: {instanceID: 9486}
     - Class: 114
-      Script: {instanceID: 9788}
+      Script: {instanceID: 9492}
     - Class: 114
-      Script: {instanceID: 9796}
+      Script: {instanceID: 9500}
     - Class: 114
-      Script: {instanceID: 9832}
+      Script: {instanceID: 9536}
     - Class: 114
-      Script: {instanceID: 10022}
+      Script: {instanceID: 9726}
     - Class: 114
-      Script: {instanceID: 10246}
+      Script: {instanceID: 9950}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 157
@@ -603,7 +610,7 @@ ScriptsOnlyBuild:
     className: AnimationTrack
   - hash:
       serializedVersion: 2
-      Hash: 298c6273571bab1c7a382ad7e3b0b327
+      Hash: 3606d4c06566fc50b2d7596de6782298
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: Prototype
@@ -1131,6 +1138,12 @@ ScriptsOnlyBuild:
     className: ActivationPlayableAsset
   - hash:
       serializedVersion: 2
+      Hash: ae9791aedd26760902f5831430e68ff9
+    assemblyName: Assembly-CSharp.dll
+    namespaceName: 
+    className: DataMaster
+  - hash:
+      serializedVersion: 2
       Hash: 88cc9df3c6fc697bfbeacd24c0d6f2d7
     assemblyName: UnityEngine.TestRunner.dll
     namespaceName: UnityEngine.TestTools
@@ -1443,7 +1456,7 @@ ScriptsOnlyBuild:
     className: SignalEmitter
   - hash:
       serializedVersion: 2
-      Hash: c6f784a3a83907a6d8c27733aff1758e
+      Hash: c7d6485914d5fcb5f79a03de29a09e1f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: AccelrationScript
@@ -1657,14 +1670,8 @@ ScriptsOnlyBuild:
     assemblyName: Unity.Timeline.dll
     namespaceName: UnityEngine.Timeline
     className: PlayableTrack
-  - hash:
-      serializedVersion: 2
-      Hash: ae9791aedd26760902f5831430e68ff9
-    assemblyName: Assembly-CSharp.dll
-    namespaceName: 
-    className: DataMaster
   platform: 13
   scenePathNames:
   - Assets/Scenes/StartScreen.unity
   - Assets/Scenes/InApp.unity
-  playerPath: /Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Builds/Build-1.1.0.apk
+  playerPath: /Users/elijah/Documents/GitHub/GameStudio2019/SpyAccelroationPrototype/Builds/Build-1.1.4.apk

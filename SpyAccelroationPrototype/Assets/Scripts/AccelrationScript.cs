@@ -17,9 +17,9 @@ public class AccelrationScript : MonoBehaviour
     private Vector3 prevAccel = new Vector3(0, 0, 0);
     public float testNum = 1;
     public float ballSpeed = 1;
-    public GameObject button1;
-    public GameObject button2;
-    public GameObject outOfBounds;
+
+    public GameObject lockScreen;
+    public GameObject beacons;
 
     // Update is called once per frame
     private void Start()
@@ -49,12 +49,10 @@ public class AccelrationScript : MonoBehaviour
     /// <returns></returns>
     IEnumerator ToFast()
     {
-        outOfBounds.SetActive(true);
-        button1.SetActive(false);
-        button2.SetActive(false);
+        lockScreen.SetActive(true);
+        beacons.SetActive(false);
         yield return new WaitForSeconds(5);
-        outOfBounds.SetActive(false);
-        button1.SetActive(true);
-        button2.SetActive(true);
+        lockScreen.SetActive(true);
+        beacons.SetActive(false);
     }
 }
