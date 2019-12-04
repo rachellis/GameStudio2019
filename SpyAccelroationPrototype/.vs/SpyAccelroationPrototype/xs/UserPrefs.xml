@@ -1,9 +1,9 @@
 ﻿<Properties StartupConfiguration="{60EAD822-A4BD-EDDB-12AE-DA2AA64F743C}|">
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/MutualCountdown.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Prototype.cs">
     <Files>
-      <File FileName="Assets/Scripts/Prototype.cs" Line="69" Column="46" />
+      <File FileName="Assets/Scripts/Prototype.cs" Line="137" Column="17" />
       <File FileName="Assets/Scripts/AccelrationScript.cs" Line="19" Column="32" />
-      <File FileName="Assets/Scripts/MutualCountdown.cs" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/MutualCountdown.cs" Line="136" Column="32" />
       <File FileName="Assets/Scripts/DataMaster.cs" Line="1" Column="2" />
     </Files>
     <Pads>
@@ -12,7 +12,7 @@
           <Node name="SpyAccelroationPrototype" expanded="True">
             <Node name="Assets" expanded="True">
               <Node name="Scripts" expanded="True">
-                <Node name="MutualCountdown.cs" selected="True" />
+                <Node name="Prototype.cs" selected="True" />
               </Node>
             </Node>
           </Node>

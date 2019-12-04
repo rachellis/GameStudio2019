@@ -132,6 +132,8 @@ public class MutualCountdown : MonoBehaviour
             string c_time = string.Format(s, mins, printInt);
             //Changing the text
             gameCountdownText.text = c_time;
+
+            Handheld.Vibrate();
             yield return null;
         }
         // If there was something to do after the game it done
