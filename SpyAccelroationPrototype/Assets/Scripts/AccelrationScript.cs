@@ -2,6 +2,12 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+/// <summary>
+/// Tests acceleration of controller and allows for edits if too fast.
+/// </summary>
+/// <remarks>
+/// Currently not implmented into the build.
+/// </remarks>
 public class AccelrationScript : MonoBehaviour
 {
     private float AccelLow = .01f;
@@ -20,6 +26,10 @@ public class AccelrationScript : MonoBehaviour
     {
         Input.gyro.enabled = true;
     }
+
+    /// <summary>
+    /// Tracks the acceleartion and triggers "To Fast" is found to be
+    /// </summary>
     void Update()
     {
         accel.x = (Input.gyro.userAcceleration.x * AccelLow) + (prevAccel.x * (1.0f - AccelLow));
@@ -33,6 +43,10 @@ public class AccelrationScript : MonoBehaviour
         prevAccel = accel;
     }
 
+    /// <summary>
+    /// Makes the changes to the game when acceleartion trigged
+    /// </summary>
+    /// <returns></returns>
     IEnumerator ToFast()
     {
         outOfBounds.SetActive(true);

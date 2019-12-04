@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 /// <summary>
-/// Countdowns from 20 Minutes currently. 
+/// Old Timer Code, Keeping in case something breaks
 /// </summary>
 public class GameTimer : MonoBehaviour
 {

@@ -3,9 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-
+/// <summary>
+/// Timer system for the game. Handles both timers
+/// </summary>
 public class MutualCountdown : MonoBehaviour
 {
+    // Collects many objects to control the buttons and text
     public Text countdownText;
 
     public Text gameCountdownText;
@@ -16,8 +19,9 @@ public class MutualCountdown : MonoBehaviour
 
     public Button startButton;
 
-    public Button hideText; 
+    public Button hideText;
 
+    // Some other bools and variables to keep. Some don't matter
     private float countdownNumber;
 
     private float newTime; 
@@ -29,7 +33,9 @@ public class MutualCountdown : MonoBehaviour
 
     [SerializeField] private DataMaster dateStuff;
 
-
+    /// <summary>
+    /// Updates the time every frame
+    /// </summary>
     private void Tick()
     {
         newTime = Time.deltaTime;
@@ -37,6 +43,10 @@ public class MutualCountdown : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Starts the setup countdown
+    /// </summary>
+    /// <param name="countdownTime">Amount of time in seconds for the timer</param>
     public void startCountdown(float countdownTime)
     { /*
 
@@ -53,26 +63,40 @@ public class MutualCountdown : MonoBehaviour
 
     }
 
+    /// <summary>
+    /// Starts the main countdown
+    /// </summary>
+    /// <param name="countdownTime">>Amount of time in seconds for the timer</param>
     public void startGameCountdown(float countdownTime) {
         StartCoroutine(GameCountdown(countdownTime));
     }
 
+    /// <summary>
+    /// Counts down during the setup phase.
+    /// </summary>
+    /// <param name="countdownTime">Amount of time in seconds for the timer</param>
+    /// <returns>Null, frame countdown</returns>
     private IEnumerator Countdown(float countdownTime)
     {
         countdownText.gameObject.SetActive(true);
 
         while (countdownTime >= 1f)
         {
-            Debug.Log("LLLOOOP");
+
             countdownTime -= (Time.deltaTime);
+
+            // Formatting items
             int printInt = (int)(countdownTime) % 60;
             int mins = ((int)(countdownTime - printInt) / 60);
             string s = "{0}:{1:00}";
             string c_time = string.Format(s, mins, printInt);
+            // Setting text to time
             countdownText.text = c_time;
             yield return null;
         }
-        
+
+
+        // After the countdown is up, update the game to go to the warning screen
         hasPressed = true;
 
         countdownText.gameObject.SetActive(false);
@@ -82,26 +106,41 @@ public class MutualCountdown : MonoBehaviour
         Warning.gameObject.SetActive(true);
     }
 
+    /// <summary>
+    /// Coundowns the main game
+    /// </summary>
+    /// <param name="countdownTime">Amount of time in seconds for the timer</param>
+    /// <returns>Null, frame countdown</returns>
     private IEnumerator GameCountdown(float countdownTime)
     {
         while (countdownTime >= 1f)
         {
+            // Check if the game has been closed
             if (dateStuff.hasQuit)
             {
                 Debug.Log("I am getting here even though I should not be hahahah");
                 countdownTime -= dateStuff.intDifference;
                 dateStuff.hasQuit = false; 
             }
+
+            // Change the time
             countdownTime -= (Time.deltaTime);
+            // Formatting the time
             int printInt = (int)(countdownTime) % 60;
             int mins = ((int)(countdownTime - printInt) / 60);
             string s = "{0}:{1:00}";
             string c_time = string.Format(s, mins, printInt);
+            //Changing the text
             gameCountdownText.text = c_time;
             yield return null;
         }
+        // If there was something to do after the game it done
+        // This is where it would go
     }
 
+    /// <summary>
+    /// Seemingly uneeded begin to hiding phase. Won't delete just in case
+    /// </summary>
     public void startHiding()
     {
         if (!hidingTime)
@@ -117,27 +156,21 @@ public class MutualCountdown : MonoBehaviour
 
     }
 
-    private void Update()
-    {
-        /*
-
-
-        if (countdownNumber <= 0 && hasPressed && !hidingTime)
-        {
-            Debug.Log("sdjshdjdh");
-            startHiding();
-            countdownText.gameObject.SetActive(false);
-            startButton.gameObject.SetActive(false);
-            hideText.gameObject.SetActive(false);
-        } */
-
-    }
-
+    
+    /// <summary>
+    /// Starts a flashing animation
+    /// </summary>
+    /// <param name="item">Gameobject to animate</param>
     public void flashItem(GameObject item)
     {
         StartCoroutine("flash", item);
     }
 
+    /// <summary>
+    /// A coroutinue ran flashing animation for an obkect
+    /// </summary>
+    /// <param name="item">Gameobject to animate</param>
+    /// <returns>Wait for seconds</returns>
     private IEnumerator flash(GameObject item)
     {
         yield return new WaitForSeconds(1);

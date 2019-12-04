@@ -5,7 +5,9 @@ using UnityEngine.SceneManagement;
 
 public class SceneChanger : MonoBehaviour
 {
-
+    /// <summary>
+    /// Changes from the start menu to the main game
+    /// </summary>
     public void changeToGame()
     {
         SceneManager.LoadScene("InApp");
