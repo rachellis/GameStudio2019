@@ -21,6 +21,14 @@ public class MutualCountdown : MonoBehaviour
 
     public Button hideText;
 
+    [Header("End Screen Stuff")]
+    public GameObject endCanvas;
+    public GameObject menu;
+    public GameObject cameraCanvas;
+    public GameObject endScreen;
+    public Prototype gameLogic;
+    public Text endText;
+
     // Some other bools and variables to keep. Some don't matter
     private float countdownNumber;
 
@@ -30,7 +38,7 @@ public class MutualCountdown : MonoBehaviour
 
     private bool hidingTime = false;
 
-
+    [Header("Data Stuff")]
     [SerializeField] private DataMaster dateStuff;
 
     /// <summary>
@@ -138,6 +146,12 @@ public class MutualCountdown : MonoBehaviour
         }
         // If there was something to do after the game it done
         // This is where it would go
+        Debug.Log("Game Done");
+        cameraCanvas.SetActive(false);
+        menu.SetActive(false);
+        endCanvas.SetActive(true);
+        endScreen.SetActive(true);
+        gameLogic.setFinalText(endText);
     }
 
     /// <summary>

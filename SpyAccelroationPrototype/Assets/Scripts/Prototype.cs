@@ -11,28 +11,29 @@ public class Prototype : MonoBehaviour
 
     public float wait = 4f;
 
-    // Beacon objects
-    public GameObject capturePointBadge;
-
+    [Header("Beacon Objects")]
     public GameObject redBeacons;
     public GameObject blueBecaons;
-
     public GameObject homeBeacon;
+    public List<GameObject> listOfFakeBeacons;
 
+    [Header("Screen Items")]
     public GameObject lockScreen;
     public GameObject beaconContainer;
     public GameObject homeScreenButton;
 
+    [Header("Display Items")]
     // List of display items
     public List<GameObject> listOfDisplays;
-
-    public List<GameObject> listOfFakeBeacons;
+    public Text scoreText;
 
     // Test if player was captured
     private bool hasBeenCaught = false;
 
     // Count number of becons
     private int numOfBeacons = 0;
+
+    private int score = 0;
 
     // Keep track of what specifc beacons have been captured
     private Hashtable dictOfBeacons = new Hashtable();
@@ -66,13 +67,14 @@ public class Prototype : MonoBehaviour
             beenCaputred();
             beaconContainer.SetActive(false);
             lockScreen.SetActive(true);
-            homeScreenButton.SetActive(true);
         }
         else
         {
             if (test == false)
             {
                 Handheld.Vibrate();
+                Debug.Log("Caught Beacon");
+                Debug.Log(beacon);
                 dictOfBeacons[beacon] = true;
                 numOfBeacons++;
                 displayBeacons(numOfBeacons);
@@ -142,6 +144,58 @@ public class Prototype : MonoBehaviour
     }
 
     /// <summary>
+    /// Effects the score when scanning home
+    /// </summary>
+    public void scanHome()
+    {
+        switch (numOfBeacons)
+        {
+            case 0:
+                break;
+            case 1:
+                score++;
+                StartCoroutine("MoveDisplay", 1);
+                break;
+            case 2:
+                score += 5;
+                StartCoroutine("MoveDisplay", 2);
+                break;
+        }
+    }
+
+    private IEnumerator MoveDisplay(int numofBecs)
+    {
+        List<Vector3> beaconPos = new List<Vector3>();
+        foreach (var beacon in listOfDisplays)
+        {
+            beaconPos.Add(beacon.transform.position);
+        }
+        while (Vector3.Distance(listOfDisplays[0].transform.position, scoreText.transform.position) > 1f)
+        {
+            for (int i = 0; i < numOfBeacons; i++)
+            {
+                listOfDisplays[i].transform.position = Vector3.MoveTowards(listOfDisplays[i].transform.position,scoreText.transform.position,15); 
+            }
+            yield return null;
+        }
+
+        for (int i = 0; i < listOfDisplays.Count; i++)
+        {
+            listOfDisplays[i].transform.position = beaconPos[i];
+            listOfDisplays[i].SetActive(false);
+        }
+        displayScore();
+        beenCaputred();
+    }
+
+    /// <summary>
+    /// Changes score display value
+    /// </summary>
+    private void displayScore()
+    {
+        scoreText.text = score.ToString();
+    }
+    /// <summary>s
     /// Sets the team for the player
     /// </summary>
     /// <param name="isRedTeam">Tests if red team</param>
@@ -168,5 +222,14 @@ public class Prototype : MonoBehaviour
             }
 			Debug.Log("On the Blue Team, find the red beacons");
         }
+    }
+
+    /// <summary>
+    /// Sets the final text
+    /// </summary>
+    /// <param name="finalText"></param>
+    public void setFinalText(Text finalText)
+    {
+        finalText.text = score.ToString();
     }
 }

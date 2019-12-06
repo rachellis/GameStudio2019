@@ -12,4 +12,9 @@ public class SceneChanger : MonoBehaviour
     {
         SceneManager.LoadScene("InApp");
     }
+
+    public void goHome()
+    {
+        SceneManager.LoadScene("StartScreen");
+    }
 }
